@@ -3,10 +3,10 @@ name: Flask App CI/CD
 on:
   push:
     branches:
-      - main  # Trigger on pushes to the main branch
+      - master  # Trigger on pushes to the master branch
   pull_request:
     branches:
-      - main  # Trigger on pull requests targeting the main branch
+      - master  # Trigger on pull requests targeting the master branch
 
 jobs:
   # Job 1: Set up Python and Install Dependencies
