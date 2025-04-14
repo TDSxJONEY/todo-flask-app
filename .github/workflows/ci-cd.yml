@@ -50,7 +50,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t flask-todo .
+        docker build -t flask-todo -f app/Dockerfile app
 
     - name: Push Docker image
       run: |
