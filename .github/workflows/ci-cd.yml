@@ -56,8 +56,10 @@ jobs:
       run: |
         docker build -t flask-todo -f ./app/Dockerfile ./app
 
+    - name: Tag Docker image
+      run: |
+        docker tag flask-todo ${{ secrets.DOCKER_USERNAME }}/flask-todo:latest
 
     - name: Push Docker image
       run: |
-        docker tag flask-todo your-docker-username/flask-todo:latest
-        docker push your-docker-username/flask-todo:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/flask-todo:latest
