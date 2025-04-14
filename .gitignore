@@ -1,0 +1,28 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+venv/
+*.env
+env/
+*.sqlite3
+
+# Docker
+Dockerfile*
+.dockerignore
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
+
+# Test coverage
+.coverage
