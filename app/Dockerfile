@@ -5,13 +5,13 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy requirements first (for caching layers)
-COPY app/requirements.txt .
+COPY requirements.txt .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy all app files
-COPY ./app/ .  
+COPY . . 
 
 
 # Expose Flask port
