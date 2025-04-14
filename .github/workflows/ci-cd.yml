@@ -54,7 +54,8 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t flask-todo -f $GITHUB_WORKSPACE/app/Dockerfile $GITHUB_WORKSPACE/app
+        docker build -t flask-todo -f ./app/Dockerfile ./app
+
 
     - name: Push Docker image
       run: |
